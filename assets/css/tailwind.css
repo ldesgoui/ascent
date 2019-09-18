@@ -1,0 +1,80 @@
+@tailwind base;
+
+::selection {
+    @apply
+        bg-gray-900
+        fill-current
+        text-gray-100
+    ;
+}
+
+@tailwind components;
+
+.ascent-text {
+    @apply
+        font-ascent
+        font-light
+        tracking-widerest
+        uppercase
+    ;
+
+    @screen lg {
+        @apply text-xl;
+    }
+}
+
+.ascent-text-heading {
+    @apply
+        font-ascent
+        font-bold
+        leading-none
+        text-5xl
+        tracking-widest
+        uppercase
+    ;
+
+    @screen lg {
+        @apply
+            text-7xl
+        ;
+    }
+}
+
+.ascent-btn {
+    @apply
+        font-ascent
+        p-2
+        text-gray-900
+        text-xs
+        tracking-widerest
+        uppercase
+    ;
+
+    @screen xl {
+        @apply
+            text-base
+        ;
+    }
+
+    &:hover, &:active {
+        @apply
+            bg-gray-900
+            shadow-lg
+            text-gray-100
+        ;
+    }
+}
+
+.ascent-bg-mountain {
+    background-image: url(~assets/img/mountain.png);
+    background-position: center top 16rem;
+    background-repeat: no-repeat;
+    background-size: "auto";
+
+    @screen md {
+        background-position: left 20% center;
+        background-size: cover;
+    }
+}
+
+@tailwind utilities;

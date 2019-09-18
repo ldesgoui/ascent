@@ -1,0 +1,236 @@
+backend:
+    name: git-gateway
+    accept_roles:
+        - admin
+
+publish_mode: editorial_workflow
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+site_url: "https://Ascent.gg"
+logo_url: "/img/admin.svg"
+
+collections:
+    -
+        label: Product
+        name: product
+        identifier_field: name
+        slug: "{{fields.slug}}"
+        format: yaml
+        folder: content/products
+        create: true
+        delete: false
+        preview_path: "/store/product/{{slug}}"
+        editor: { preview: false }
+        fields:
+            -
+                label: Slug
+                name: slug
+                widget: string
+                hint: "Identifier that shows up in the URL bar"
+
+            -
+                label: Name
+                name: name
+                widget: string
+                hint: "Name that shows up on the site"
+
+            -
+                label: Short Description
+                name: shortDescription
+                widget: text
+                hint: "Short description to appear in the store listing"
+
+            -
+                label: Description
+                name: description
+                widget: text
+                hint: "Longer description to appear in the product page"
+
+            -
+                label: Featured Image (3:4 ratio)
+                name: thumbnail
+                widget: image
+                hint: "Featured image to appear in the store listing"
+
+            -
+                label: Images
+                name: images
+                widget: list
+                field:
+                    label: Image
+                    name: image
+                    widget: image
+                hint: "List of images to appear in the product page"
+
+            -
+                label: "Price *in USD cents*"
+                name: price
+                widget: number
+                valueType: int
+                hint: "500 for $5, 399 for $3.99"
+
+            -
+                label: Sizes
+                name: sizes
+                widget: list
+                fields:
+                    -
+                        label: Name
+                        name: name
+                        widget: string
+                        hint: "e.g.: S, M, L"
+
+                    -
+                        label: SKU
+                        name: sku
+                        widget: string
+                        hint: "Unique identifier for the size of the product"
+
+                    -
+                        label: Initial quantity
+                        name: quantity
+                        widget: number
+                        valueType: int
+                        min: 0
+
+                    -
+                        label: Amount purchased
+                        name: purchased
+                        widget: number
+                        valueType: int
+                        min: 0
+
+                    -
+                        label: Length in inches
+                        name: length
+                        widget: number
+
+                    -
+                        label: Width in inches
+                        name: width
+                        widget: number
+
+                    -
+                        label: Sleeve in inches
+                        name: sleeve
+                        widget: number
+
+    -
+        label: Player
+        name: player
+        identifier_field: name
+        format: yaml
+        folder: content/players
+        create: true
+        editor: { preview: false }
+        fields:
+            -
+                label: Name
+                name: name
+                widget: string
+
+            -
+                label: Title
+                name: title
+                widget: string
+                required: false
+
+            -
+                label: Photo
+                name: photo
+                widget: image
+                required: false
+
+            -
+                label: Link to highlights
+                name: highlights
+                widget: string
+                required: false
+
+            -
+                label: Twitch username
+                name: twitch
+                widget: string
+                required: false
+
+            -
+                label: Twitter username
+                name: twitter
+                widget: string
+                required: false
+
+            -
+                label: Youtube Channel
+                name: youtube
+                widget: object
+                fields:
+                    -
+                        label: Label
+                        name: label
+                        widget: string
+                        required: false
+
+                    -
+                        label: Entire URL
+                        name: url
+                        widget: string
+                        required: false
+
+            -
+                label: Instagram username
+                name: instagram
+                widget: string
+                required: false
+
+    -
+        label: Team
+        name: team
+        identifier_field: slug
+        slug: "{{fields.slug}}"
+        format: yaml
+        folder: content/teams
+        create: true
+        preview_path: "/team#{{slug}}"
+        editor: { preview: false }
+        fields:
+            -
+                label: Slug
+                name: slug
+                widget: string
+                hint: "Identifier to appear in the URL"
+
+            -
+                label: Order
+                name: order
+                widget: number
+                valueType: int
+                hint: "Teams are sorted by this value in ascending order"
+
+            -
+                label: Game
+                name: game
+                widget: select
+                options: [ "CSGO", "TF2", "QC" ]
+
+            -
+                label: Flag
+                name: flag
+                widget: select
+                options: [ "US", "EU" ]
+
+            -
+                label: Link to highlights
+                name: highlights
+                widget: string
+                required: false
+
+            -
+                label: Players
+                name: players
+                widget: relation
+                collection: player
+                searchFields: ["name"]
+                valueField: "name"
+                multiple: true

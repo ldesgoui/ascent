@@ -1,0 +1,28 @@
+[build]
+ command = "yarn build"
+ publish = "dist"
+ functions = "dist-functions"
+
+[dev]
+ command = "nuxt"
+
+[[redirects]]
+ from = "/store/product/hoodie"
+ to = "/store/product/2019-hoodie"
+
+[[redirects]]
+ from = "/store/product/shirt"
+ to = "/store/product/2019-shirt"
+
+[[redirects]]
+ from = "/store/basket"
+ to = "/store/checkout"
+
+[[headers]]
+ for = "/*"
+
+ [headers.values]
+  Feature-Policy = "fullscreen 'self'"
+  Referrer-Policy = "strict-origin-when-cross-origin"
+  X-Frame-Options = "DENY"
+  X-Xss-Protection = "1; mode=block"

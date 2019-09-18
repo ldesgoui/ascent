@@ -1,0 +1,52 @@
+slug: 2019-hoodie
+name: Ascent Logo Hoodie
+shortDescription: Our logo hoodie is pre-washed & made to last plenty of wears.
+description: |
+  Our logo hoodie is pre-washed & made to last plenty of wears.
+  The front logo & sleeve details are all embroidered here in New York.
+  50% Cotton, 50% Polyester
+
+  * Only 40 total hoodies available.
+  * Orders will be shipped out starting the week of September 1st. (After i65).
+thumbnail: /uploads/2019-hoodie-thumbnail.jpg
+images:
+  - /uploads/2019-hoodie-1.jpg
+  - /uploads/2019-hoodie-2.jpg
+  - /uploads/2019-hoodie-3.jpg
+price: 5500
+sizes:
+  - length: 26
+    name: S
+    purchased: 6
+    quantity: 6
+    sku: 2019-hoodie-s
+    sleeve: 24
+    width: 20
+  - length: 27
+    name: M
+    purchased: 13
+    quantity: 13
+    sku: 2019-hoodie-m
+    sleeve: 24
+    width: 22
+  - length: 28
+    name: L
+    purchased: 13
+    quantity: 13
+    sku: 2019-hoodie-l
+    sleeve: 24
+    width: 23.5
+  - length: 29
+    name: XL
+    purchased: 6
+    quantity: 6
+    sku: 2019-hoodie-xl
+    sleeve: 24
+    width: 25
+  - length: 30
+    name: XXL
+    purchased: 2
+    quantity: 2
+    sku: 2019-hoodie-xxl
+    sleeve: 24
+    width: 27.5

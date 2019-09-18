@@ -1,0 +1,59 @@
+slug: 2019-shirt
+name: Ascent Logo T-Shirt
+shortDescription: >-
+  Our essential logo tee is of a higher quality blend than its previous
+  iterations, pre-washed & made to last.
+description: >
+  Our essential logo tee is of a higher quality blend than its previous
+  iterations, pre-washed & made to last.
+
+  The front logo & sleeve details are all embroidered here in New York.
+
+  50% Cotton, 50% Polyester
+
+
+  * Only 40 total tees available.
+
+  * Orders will be shipped out starting the week of September 1st. (After i65).
+thumbnail: /uploads/2019-shirt-thumbnail.jpg
+images:
+  - /uploads/2019-shirt-1.jpg
+  - /uploads/2019-shirt-2.jpg
+  - /uploads/2019-shirt-3.jpg
+price: 3000
+sizes:
+  - length: 26.5
+    name: S
+    purchased: 6
+    quantity: 6
+    sku: 2019-shirt-s
+    sleeve: 7.5
+    width: 19
+  - length: 27
+    name: M
+    purchased: 13
+    quantity: 13
+    sku: 2019-shirt-m
+    sleeve: 7.5
+    width: 20
+  - length: 29
+    name: L
+    purchased: 13
+    quantity: 13
+    sku: 2019-shirt-l
+    sleeve: 8
+    width: 21.5
+  - length: 30
+    name: XL
+    purchased: 6
+    quantity: 6
+    sku: 2019-shirt-xl
+    sleeve: 8
+    width: 22.5
+  - length: 32
+    name: XXL
+    purchased: 2
+    quantity: 2
+    sku: 2019-shirt-xxl
+    sleeve: 8
+    width: 25
