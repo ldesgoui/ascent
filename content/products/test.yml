@@ -1,0 +1,18 @@
+slug: test
+name: Test Product
+shortDescription: Hello We Testin
+description: |-
+  Hello We Testin
+  And We Testin
+thumbnail: /uploads/2019-hoodie-thumbnail.jpg
+images:
+  - /uploads/2019-hoodie-1.jpg
+price: 4000
+sizes:
+  - length: 10
+    name: XXS
+    purchased: 0
+    quantity: 20
+    sku: test-xxs
+    sleeve: 10
+    width: 10
