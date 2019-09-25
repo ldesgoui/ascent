@@ -1,7 +1,9 @@
 <template>
   <div class="flex flex-col md:flex-row md:items-center">
     <div>
-      <div class="slant-game px-6 flex items-center bg-orange-500">
+      <div
+        class="float-left h-16 pl-4 pr-10 -mr-3 flex items-center bg-orange-500"
+      >
         <div
           class="mr-4 inline-block w-10 text-white fill-current"
           v-html="gameLogoComponent"
@@ -13,8 +15,11 @@
         </div>
       </div>
 
-      <div class="slant-flag px-8 flex items-center bg-gray-300">
-        <img :src="flagSrc" class="w-16" />
+      <div
+        class="float-left h-16 px-6 flex items-center bg-gray-300"
+        style="transform: skewX(-20deg)"
+      >
+        <img :src="flagSrc" class="h-12" style="transform: skewX(20deg)" />
       </div>
     </div>
 
@@ -96,40 +101,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.slant-game {
-  float: left;
-  position: relative;
-  height: 56px;
-
-  &:after {
-    z-index: 1;
-    position: absolute;
-    right: -20px;
-    top: 0;
-    content: "";
-    border-bottom: 20px solid transparent;
-    border-left: 10px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 56px solid theme("colors.orange.500");
-  }
-}
-
-.slant-flag {
-  float: left;
-  position: relative;
-  height: 56px;
-
-  &:after {
-    position: absolute;
-    right: 0;
-    top: -20px;
-    content: "";
-    border-bottom: 57px solid white;
-    border-left: 20px solid transparent;
-    border-right: 0 solid transparent;
-    border-top: 20px solid transparent;
-  }
-}
-</style>
