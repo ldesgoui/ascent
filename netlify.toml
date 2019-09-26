@@ -26,3 +26,5 @@
   Referrer-Policy = "strict-origin-when-cross-origin"
   X-Frame-Options = "DENY"
   X-Xss-Protection = "1; mode=block"
+  X-Content-Type-Options = "nosniff"
+  Content-Security-Policy-Report-Only = "default-src 'none'; report-uri https://ldesgoui.report-uri.com/r/d/csp/wizard"
