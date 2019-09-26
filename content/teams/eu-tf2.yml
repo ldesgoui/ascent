@@ -3,9 +3,9 @@ order: 2
 game: TF2
 flag: EU
 players:
-    - LUKAS
-    - toemas
-    - papi
-    - iatgink
     - klassy
+    - toemas
+    - iatgink
+    - papi
+    - LUKAS
     - seeds
