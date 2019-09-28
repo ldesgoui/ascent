@@ -27,11 +27,11 @@ export default {
   async mounted() {
     let cycle = 30000
 
-    if (location.search.includes("vertical")) {
+    if (this.$route.query.vertical === null) {
       this.$el.classList.add("flex-col")
     }
 
-    if (location.search.includes("debug")) {
+    if (this.$route.query.debug === null) {
       cycle = 5000
       this.$el.classList.add("bg-red-500")
     }
