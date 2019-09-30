@@ -12,7 +12,7 @@
   "dependencies": {
     "@bazzite/nuxt-optimized-images": "^0.2.1",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "@nuxtjs/sitemap": "^1.3.1",
+    "@nuxtjs/sitemap": "^2.0.0",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
     "netlify-cms": "^2.9.7",
@@ -37,7 +37,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "glob": "^7.1.4",
     "js-yaml-loader": "^1.2.2",
-    "lint-staged": "^8.2.1",
+    "lint-staged": "^9.4.0",
     "netlify-cli": "^2.13.1",
     "netlify-lambda": "^1.6.3",
     "npm-run-all": "^4.1.5",
