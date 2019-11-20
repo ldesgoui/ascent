@@ -54,6 +54,15 @@
       >
         <img src="~simple-icons/icons/youtube.svg" class="w-6 lg:w-8" />
       </a>
+
+      <a
+        class="p-4 inline-block"
+        href="https://www.twitch.tv/team/ascentesports"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="~simple-icons/icons/twitch.svg" class="w-6 lg:w-8" />
+      </a>
     </div>
   </div>
 </template>
