@@ -24,6 +24,7 @@
       :links="{
         'The Team': '/team',
         'Store': '/store',
+        'Contact Us': '/contact',
       }"
     />
 
