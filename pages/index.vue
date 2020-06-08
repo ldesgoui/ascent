@@ -12,13 +12,9 @@
     <p class="mb-4 lg:mb-8 ascent-text">Est 2017</p>
 
     <p class="mb-8 lg:mb-16 ascent-text">
-      <!-- <n-link to="/team#na-csgo">CSGO</n-link> -->
-      <!-- // -->
       <n-link to="/team#na-tf2">TF2</n-link>
       //
       <n-link to="/team#na-qc">Quake</n-link>
-      //
-      <n-link to="/team#na-ow">Overwatch</n-link>
     </p>
 
     <ascent-nav
