@@ -40,6 +40,7 @@ import EUFlag from "svg-country-flags/svg/eu.svg"
 import USFlag from "svg-country-flags/svg/us.svg"
 
 import CSGOLogo from "~/assets/img/csgo.svg?include"
+import OWLogo from "~/assets/img/ow.svg?include"
 import QCLogo from "~/assets/img/qc.svg?include"
 import TF2Logo from "~/assets/img/tf2.svg?include"
 
@@ -63,9 +64,10 @@ export default {
     gameLogoComponent() {
       return (
         {
-          TF2: TF2Logo,
           CSGO: CSGOLogo,
+          OW: OWLogo,
           QC: QCLogo,
+          TF2: TF2Logo,
         }[this.game] || TF2Logo
       )
     },
@@ -73,9 +75,10 @@ export default {
     shortName() {
       return (
         {
-          TF2: "TF2",
           CSGO: "CS:GO",
+          OW: "OW",
           QC: "QC",
+          TF2: "TF2",
         }[this.game] || "TF2"
       )
     },
@@ -83,9 +86,10 @@ export default {
     fullName() {
       return (
         {
-          TF2: "Team Fortress 2",
           CSGO: "CS: Global Offensive",
+          OW: "Overwatch",
           QC: "Quake Champions",
+          TF2: "Team Fortress 2",
         }[this.game] || "Team Fortress 2"
       )
     },

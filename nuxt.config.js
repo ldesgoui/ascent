@@ -48,7 +48,7 @@ export default {
       name: "Ascent Esports",
       author: "Ascent Esports",
       description:
-        "We are Ascent // Competing in CS:GO, TF2 and Quake Champions since 2017",
+        "We are Ascent // Competing in TF2 and Quake Champions since 2017",
       twitterSite: "AscentEsports",
       twitterCreator: "wyattriver_",
     },
