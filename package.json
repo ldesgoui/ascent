@@ -10,7 +10,6 @@
     "*.{js,vue}": "eslint"
   },
   "dependencies": {
-    "@bazzite/nuxt-optimized-images": "^0.2.1",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "@nuxtjs/sitemap": "^2.4.0",
     "imagemin-mozjpeg": "^8.0.0",
@@ -26,6 +25,7 @@
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.1.0",
     "@nuxtjs/eslint-config": "^3.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/tailwindcss": "^2.1.0",
