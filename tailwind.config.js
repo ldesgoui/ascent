@@ -46,4 +46,5 @@ module.exports = {
     textDecoration: ["responsive", "hover", "focus", "group-hover"],
   },
   plugins: [],
+  purge: false,
 }

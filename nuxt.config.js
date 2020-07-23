@@ -14,9 +14,9 @@ export default {
     "~/plugins/show-money.js",
   ],
 
-  buildModules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss"],
+  buildModules: ["@aceforth/nuxt-optimized-images", "@nuxtjs/eslint-module", "@nuxtjs/tailwindcss"],
 
-  modules: ["@bazzite/nuxt-optimized-images", "@nuxtjs/pwa", "@nuxtjs/sitemap"],
+  modules: ["@nuxtjs/pwa", "@nuxtjs/sitemap"],
 
   build: {
     extend(config, ctx) {
